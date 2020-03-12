@@ -1,0 +1,155 @@
+<?php
+$searchdefs ['Leads'] = 
+array (
+  'layout' => 
+  array (
+    'basic_search' => 
+    array (
+      'last_name' => 
+      array (
+        'width' => '10%',
+        'label' => 'LBL_LAST_NAME',
+        'default' => true,
+        'name' => 'last_name',
+      ),
+      'name_c' => 
+      array (
+        'width' => '10%',
+        'label' => 'LBL_NAME',
+        'default' => true,
+        'name' => 'name_c',
+      ),
+      'sales_rep_c' => 
+      array (
+        'width' => '10%',
+        'label' => 'LBL_SALES_REP',
+        'default' => true,
+        'name' => 'sales_rep_c',
+      ),
+      'current_user_only' => 
+      array (
+        'name' => 'current_user_only',
+        'label' => 'LBL_CURRENT_USER_FILTER',
+        'type' => 'bool',
+        'default' => true,
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      'full_name' => 
+      array (
+        'name' => 'full_name',
+        'rname' => 'full_name',
+        'vname' => 'LBL_NAME',
+        'type' => 'name',
+        'fields' => 
+        array (
+          0 => 'first_name',
+          1 => 'last_name',
+        ),
+        'sort_on' => 'last_name',
+        'source' => 'non-db',
+        'group' => 'last_name',
+        'len' => '510',
+        'db_concat_fields' => 
+        array (
+          0 => 'first_name',
+          1 => 'last_name',
+        ),
+        'width' => '10%',
+        'link' => true,
+        'label' => 'LBL_NAME',
+        'related_fields' => 
+        array (
+          0 => 'first_name',
+          1 => 'last_name',
+        ),
+        'orderBy' => 'last_name',
+        'default' => true,
+      ),
+      'first_name' => 
+      array (
+        'name' => 'first_name',
+        'label' => 'LBL_FIRST_NAME',
+        'default' => true,
+      ),
+      'phone' => 
+      array (
+        'name' => 'phone',
+        'label' => 'LBL_ANY_PHONE',
+        'type' => 'name',
+        'default' => true,
+      ),
+      'last_name' => 
+      array (
+        'name' => 'last_name',
+        'label' => 'LBL_LAST_NAME',
+        'default' => true,
+      ),
+      'customer_type_c' => 
+      array (
+        'width' => '10%',
+        'label' => 'LBL_CUSTOMER_TYPE',
+        'default' => true,
+        'name' => 'customer_type_c',
+      ),
+      'email' => 
+      array (
+        'name' => 'email',
+        'label' => 'LBL_ANY_EMAIL',
+        'type' => 'name',
+        'default' => true,
+      ),
+      'account_name' => 
+      array (
+        'name' => 'account_name',
+        'label' => 'LBL_ACCOUNT_NAME',
+        'default' => true,
+      ),
+      'address_postalcode' => 
+      array (
+        'name' => 'address_postalcode',
+        'label' => 'LBL_POSTAL_CODE',
+        'type' => 'name',
+        'default' => true,
+      ),
+      'lead_source' => 
+      array (
+        'name' => 'lead_source',
+        'label' => 'LBL_LEAD_SOURCE',
+        'default' => true,
+      ),
+      'status' => 
+      array (
+        'name' => 'status',
+        'label' => 'LBL_STATUS',
+        'default' => true,
+      ),
+      'assigned_user_id' => 
+      array (
+        'name' => 'assigned_user_id',
+        'type' => 'enum',
+        'label' => 'LBL_ASSIGNED_TO',
+        'function' => 
+        array (
+          'name' => 'get_user_array',
+          'params' => 
+          array (
+            0 => false,
+          ),
+        ),
+        'default' => true,
+      ),
+    ),
+  ),
+  'templateMeta' => 
+  array (
+    'maxColumns' => '3',
+    'widths' => 
+    array (
+      'label' => '10',
+      'field' => '30',
+    ),
+  ),
+);
+?>

@@ -1,0 +1,108 @@
+<?php
+$module_name = 'tr_Trials';
+$_object_name = 'tr_trials';
+$viewdefs [$module_name] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'name',
+            'displayParams' => 
+            array (
+              'size' => 60,
+            ),
+            'label' => 'LBL_SUBJECT',
+          ),
+          1 => 
+          array (
+            'name' => 'leads_tr_trials_name',
+            'label' => 'LBL_LEADS_TR_TRIALS_FROM_LEADS_TITLE',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'approval_status_c',
+            'label' => 'LBL_APPROVAL_STATUS',
+          ),
+          1 => 
+          array (
+            'name' => 'number_days_c',
+            'label' => 'LBL_NUMBER_DAYS',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'testing_bandwidth',
+            'label' => 'LBL_TESTING_BANDWIDTH',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'description',
+            'label' => 'LBL_DESCRIPTION',
+          ),
+        ),
+      ),
+      'lbl_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'username_c',
+            'label' => 'LBL_USERNAME',
+          ),
+          1 => 
+          array (
+            'name' => 'trial_status_c',
+            'label' => 'LBL_TRIAL_STATUS',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'trial_start_c',
+            'label' => 'LBL_TRIAL_START',
+          ),
+          1 => 
+          array (
+            'name' => 'trial_end_c',
+            'label' => 'LBL_TRIAL_END',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+?>

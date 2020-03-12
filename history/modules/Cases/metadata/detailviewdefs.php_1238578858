@@ -1,0 +1,144 @@
+<?php
+$viewdefs ['Cases'] = 
+array (
+  'DetailView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'form' => 
+      array (
+        'buttons' => 
+        array (
+          0 => 'EDIT',
+          1 => 'DUPLICATE',
+          2 => 'DELETE',
+          3 => 'FIND_DUPLICATES',
+        ),
+      ),
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'case_number',
+            'label' => 'LBL_CASE_NUMBER',
+          ),
+          1 => 
+          array (
+            'name' => 'name',
+            'label' => 'LBL_SUBJECT',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'subject_group_c',
+            'label' => 'LBL_SUBJECT_GROUP',
+          ),
+          1 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'account_name',
+            'label' => 'LBL_ACCOUNT_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'calling_num_c',
+            'label' => 'LBL_CALLING_NUM',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'case_type_c',
+            'label' => 'LBL_CASE_TYPE',
+          ),
+          1 => 
+          array (
+            'name' => 'subject_setting_c',
+            'label' => 'LBL_SUBJECT_SETTING',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'qs_queues_cases_name',
+            'label' => 'LBL_QS_QUEUES_CASES_FROM_QS_QUEUES_TITLE',
+          ),
+          1 => NULL,
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'priority',
+            'label' => 'LBL_PRIORITY',
+          ),
+          1 => 
+          array (
+            'name' => 'status',
+            'label' => 'LBL_STATUS',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'modified_by_name',
+            'group' => 'modified_by_name',
+            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}&nbsp;',
+            'label' => 'LBL_DATE_MODIFIED',
+          ),
+          1 => 
+          array (
+            'name' => 'created_by_name',
+            'group' => 'created_by_name',
+            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}&nbsp;',
+            'label' => 'LBL_DATE_ENTERED',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'description',
+            'label' => 'LBL_DESCRIPTION',
+          ),
+        ),
+        8 => 
+        array (
+          0 => 
+          array (
+            'name' => 'resolution',
+            'label' => 'LBL_RESOLUTION',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+?>

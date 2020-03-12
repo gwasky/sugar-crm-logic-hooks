@@ -1,0 +1,92 @@
+<?php
+$module_name = 'tr_Trials';
+$_object_name = 'tr_trials';
+$viewdefs [$module_name] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'name',
+            'displayParams' => 
+            array (
+              'size' => 60,
+            ),
+            'label' => 'LBL_SUBJECT',
+          ),
+          1 => 
+          array (
+            'name' => 'leads_tr_trials_name',
+            'label' => 'LBL_LEADS_TR_TRIALS_FROM_LEADS_TITLE',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'testing_bandwidth',
+            'label' => 'LBL_TESTING_BANDWIDTH',
+          ),
+          1 => 
+          array (
+            'name' => 'trial_status_c',
+            'label' => 'LBL_TRIAL_STATUS',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'start_date',
+            'label' => 'LBL_START_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'end_date',
+            'label' => 'LBL_END_DATE',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'description',
+            'label' => 'LBL_DESCRIPTION',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'qs_queues_tr_trials_name',
+            'label' => 'LBL_QS_QUEUES_TR_TRIALS_FROM_QS_QUEUES_TITLE',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+?>
